@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/swipeRefreshLayout"
+    tools:context=".MainActivity3">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/Textnav"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="94dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginVertical="10dp"
+                app:srcCompat="@drawable/nav" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorWhite"
+            app:itemIconTint="@drawable/icstate"
+            app:itemTextColor="@drawable/icstate"
+            app:menu="@menu/toolbar_menu" />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="-2dp"
+            android:progress="20"
+            android:visibility="gone" />
+
+
+        <WebView
+            android:id="@+id/myWebView"
+            android:layout_width="match_parent"
+            android:layout_height="684dp" />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:src="@drawable/no_internet"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/noConnectionLogo"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection"
+            android:layout_below="@id/noConnectionLogo"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:id="@+id/txtNoConnection"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:text="Retry"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_below="@+id/txtNoConnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/btnNoConnection"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

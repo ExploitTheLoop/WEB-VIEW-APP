@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity2">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="640dp" />
+
+    <LinearLayout
+        android:id="@+id/dotslayout"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/pager"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="37dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingLeft="100dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="147dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/pager"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_toStartOf="@+id/dotslayout"
+        android:layout_toLeftOf="@+id/dotslayout"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textColor="#F8F2F2"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/pager"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:background="@android:color/transparent"
+        android:text="Next"
+        android:textColor="#EFEAEA"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+
+
+
+
+

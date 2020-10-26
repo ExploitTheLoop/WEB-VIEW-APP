@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="35dp">
+
+    <ImageView
+        android:id="@+id/slideimageView"
+        android:layout_width="171dp"
+        android:layout_height="129dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/gosselinnotext" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slideimageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="HEADING"
+        android:textColor="#F6F4F4"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/despo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="46dp"
+        android:text="welcome to gosselin , i hope you will be happy with our service and  all etc whatyever we are the best company"
+        android:textColor="@color/colorTransparentWhite"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+</RelativeLayout>
